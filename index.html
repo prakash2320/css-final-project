@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Er Coffee</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+         /* css properties for navbar */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+        }
+        
+        .container{
+            height: 100px;  
+            width: 100%;
+            background-color: #86491d;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .welcome{
+            color: #8e6221;
+            font-size: 30px;
+        }
+        
+        .btns{
+            margin-top: 10px;
+            width: 40%;
+            color: #ca8215;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+        .btn{
+            padding: 3px;
+        }
+
+        .btn:hover{
+            transition: 0.4s;
+            transform: scale(1.5);
+            cursor: pointer;
+            border: 2px solid burlywood;
+            border-radius: 3px;
+        }
+
+        /* css for marquee element */
+
+        .marqueetag{
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            
+        }
+            
+        marquee{
+            border-bottom: 4px solid black;
+        }
+
+        span{
+            margin-left: 300px;
+        }
+
+        /* css properties for happiness section */
+
+        .happiness{
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fresh{
+            font-size: 40px;
+        }
+
+        .enjoy{
+            font-size: 15px;
+            color: gray;
+        }
+
+        /* css propertis for image1 */
+
+        .image1{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .chocolate{
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .image{
+            margin-top: 10px;
+        }
+
+        /* css propery fo about us  */
+        .aboutus{
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about{
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .history{
+            color: grey;
+        }
+
+        /* css properties for form */
+        .formsection{
+            margin: auto;
+            width: 500px;
+            height: 550px;
+            border: 3px solid #ca8215;
+            box-shadow: 0 3px 4px 0 #8e6221;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contactus{
+            font-size: 30px;
+            color: grey;
+            margin-bottom: 50px;
+        }
+
+        .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #ca8215;
+        }
+
+        .fname{
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        input, textarea{
+            height: 40px;
+            width: 400px;
+            border-radius: 4px;
+            border: 2px solid #ca8215;
+            box-shadow: 0 3px 4px 0 #8e6221;
+        
+        }
+
+        #btn2{
+            color: bisque;
+           margin: auto;
+           margin-top: 30px;
+            width: 100px;
+            border-radius: 4px;
+            border: 2px solid #ca8215;
+            box-shadow: 0 3px 4px 0 #8e6221;
+            background-color: #8e6221;
+        }
+
+        #btn2:hover{
+            transition: 0.4s;
+            transform: scale(1.5);
+            cursor: pointer;
+        }
+
+        /* css properties for marquee2 */
+
+        .marquee2{
+            margin-top: 100px;
+            margin-bottom: 50px;
+            color: gray;
+            font-size: 30px;
+        }
+
+        /* css for images */
+
+       #image2{
+        width:400px ;
+        height:300px ;
+       }
+
+        
+      
+       #image3{
+        width:400px ;
+        height:300px ;
+       }
+
+       /* css for last text */
+
+       .container1{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: bold;
+       }
+
+       /* css for footer */
+       .footer{
+        margin-top: 50px;
+            height: 70px;
+            width: 100%;
+            background-color: #86491d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon{
+            color: bisque;
+            font-size: 30px;
+            margin: 7px;
+        }
+
+        .icon:hover{
+            transition: 0.2s;
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <nav>
+        <div class="container">
+          <div class="welcome">☕Welcome to New Er Coffee.Com</div>
+          <div class="btns">
+             <div class="btn">Home</div>
+             <div class="btn">About Us</div>
+             <div class="btn">Menu</div>
+             <div class="btn">Gallery</div>
+             <div class="btn">Contact Us</div>
+          </div>
+        </div>
+    </nav>
+
+
+    <div class="marqueetag">
+        <marquee behavior="scroll" direction="right">Chocolate Pastry For Sale <span>Chocolate Pastry For Sale</span></marquee>
+    </div>
+
+    
+    
+    <div class="happiness">
+        <div class="fresh">Freshly Brewed Happiness</div> 
+        <div class="enjoy">Come enjoy a coy atmosphere with the finest coffee, delicious pastries, and a warm, welcoming vibe.</div> 
+    </div>
+
+    <div class="image1">
+        <div class="chocolate">Chocolate Pastry</div>
+        <div class="image"><img src="https://t3.ftcdn.net/jpg/09/98/44/68/240_F_998446823_TAE4TrGXrdKc5OI14KJ7Waokdcwrk6N4.jpg" alt="image not found"></div>
+    </div>
+
+    <div class="aboutus">
+        <div class="about">About Us</div>
+        <div class="history">The Coffee History</div>
+    </div>
+
+    
+    
+    <div class="formsection">
+        
+        <div class="contactus">Contact Us For Order</div>
+        
+        <div class="form">
+            
+        <form action="">
+           
+            <div class="fname">Name</div>
+            <input type="text">
+           
+           
+            <div class="fname">Email</div>
+            <input type="email" name="" id="">
+
+            <div class="fname">Order</div>
+            <textarea name="" id=""></textarea>
+
+            <div class="fname" id="btn2">Submit</div>
+            
+        </form>
+    
+    </div>
+</div>
+
+
+<div class="marquee2"><marquee behavior="scroll" direction="right">Come For Coffee☕</marquee></div>
+
+<div class="image1">
+    <div class="chocolate">Americano</div>
+    <div class="image" ><img src="https://images.pexels.com/photos/317377/pexels-photo-317377.jpeg?auto=compress&cs=tinysrgb&w=600" alt="image not found" id="image2"></div>
+</div>
+
+<div class="image1">
+    <div class="chocolate">Cappuccino</div>
+    <div class="image" id="image3"><img src="https://images.pexels.com/photos/302896/pexels-photo-302896.jpeg?auto=compress&cs=tinysrgb&w=600" alt="image not found" id="image3"></div>
+</div>
+
+<div class="container1">Visit For ☕Coffee</div>
+
+
+<footer>
+
+    <div class="footer">
+        <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+        <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+        <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+    </div>
+        
+</footer>    
+</body>
+</html>
+
+            
+
+
+
+
+            
